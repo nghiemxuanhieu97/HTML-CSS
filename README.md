@@ -54,6 +54,20 @@ Priority: !important > Inline > #id > .class > tag-name > *
 * ::first-line - css cho dòng đầu tiên
 * ::selection - css khi bôi chuột
 
+**Note:** Ngoài css margin, padding, border. Thì ta có thuộc tính box-sizing với các giá trị:
+* **border-box:** tự động tính toán content để khi content + padding + border = kích thước tổng width hoặc height
+* **content-box(default):** trở về như khi chưa set box-sizing
+* **unset:** hủy thuộc tính box-sizing trước đó
 
+### **CSS Background**
+* **background-clip**: quy định background đổ tới đâu. Value: border-box, padding-box, content-box
+* **background-image**: đưa ảnh vào background. Default ảnh sẽ lặp đi lặp lại nên cần thêm **background-repeat: no-repeat**. background-image có thể có nhiều hình (url(), url())
+* **background-size**: contain (Lấy kích thước dài nhất có thể theo chiều ngắn hơn), cover (Lấy kích thước dài nhất có thể theo chiều dài hơn, chấp nhận cả che khuất ảnh)
+* **background-origin**: được sử dụng kèm với background-image, tương tự với background-clip
+* **background-position**: top 20px right 20%
+* **background**: url() no-repeat center / contain;
 
-
+### **CSS Position**
+* **relative**: Phụ thuộc vào vị trí của chính nó, lấy vị trí chính nó làm gốc tọa độ, ko bị ảnh hưởng bởi vị trí của mấy element khác. có thể sử dụng top, left, right, bottom khi dùng relative
+* **absolute**: Lấy vị trí của thằng cha làm vị trí gốc. Thông thường thằng cha để position = relative.
+* **fixed**: Lấy cửa sổ trình duyệt làm vị trí cố định. Thường làm cho header và footer.
