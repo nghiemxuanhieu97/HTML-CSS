@@ -70,4 +70,22 @@ Priority: !important > Inline > #id > .class > tag-name > *
 ### **CSS Position**
 * **relative**: Phụ thuộc vào vị trí của chính nó, lấy vị trí chính nó làm gốc tọa độ, ko bị ảnh hưởng bởi vị trí của mấy element khác. có thể sử dụng top, left, right, bottom khi dùng relative
 * **absolute**: Lấy vị trí của thằng cha làm vị trí gốc. Thông thường thằng cha để position = relative.
-* **fixed**: Lấy cửa sổ trình duyệt làm vị trí cố định. Thường làm cho header và footer.
+* **fixed**: Lấy cửa sổ trình duyệt làm vị trí cố định. Thường làm cho header và footer. Khi người dùng kéo lên xuống thì ko bị mất.
+* **sticky**: Khuyến cáo ko sử dụng vì ít trình duyệt hỗ trợ. Khác với fixed là sticky ko nằm cố định, khi lăn chuột tới một vị trí nhất định thì thẻ đó sẽ cố định (bám dính) vào vị trí đó.
+* **Note**: Sử dụng thêm z-index để quy định element nào sẽ nằm trên element nào trong trường hợp các element đều có position.
+
+### **Common website component**
+* Header (Đầu trang)
+* Nav - Navigation (Điều hướng của trang)
+* Breadcrumb (Chỉ cho người dùng họ đang ở đâu)
+* Sidebar (Thanh phân loại, điều hướng, lọc) - Thường nằm bên trái hoặc phải.
+* Slider (Trình diễn nội dung chạy, thường là hình ảnh, trượt qua trượt lại được)
+* Banner (Ảnh quảng cáo)
+* Content (Nội dung chính website)
+* Footer (Chân trang)
+
+### **Experience**
+* Display: 
+    * Inline-block: có thể set width, height nhưng do nó kế thừa tính chất inline nên nó sẽ ko tự động co dãn theo thằng cha, nó chỉ co kích thước bằng chính nội dung của nó thôi.
+    * Block: kế thừa chiều ngang của thẻ chứa nó. Khi có thuộc tính position thì thuộc tính kế thừa chiều ngang không còn nữa, phải sử dụng top, right, left, bottom
+* Symbol: https://themify.me/themify-icons

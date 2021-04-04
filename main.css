@@ -1,7 +1,0 @@
-:root {
-    --text-color: green;
-}
-
-h1 {
-    color: var(--text-color)
-}
