@@ -89,3 +89,14 @@ Priority: !important > Inline > #id > .class > tag-name > *
     * Inline-block: có thể set width, height nhưng do nó kế thừa tính chất inline nên nó sẽ ko tự động co dãn theo thằng cha, nó chỉ co kích thước bằng chính nội dung của nó thôi.
     * Block: kế thừa chiều ngang của thẻ chứa nó. Khi có thuộc tính position thì thuộc tính kế thừa chiều ngang không còn nữa, phải sử dụng top, right, left, bottom
 * Symbol: https://themify.me/themify-icons
+* Khi element cha ko bao được hết element con do các thằng con sử dụng float. Ta xử lý bằng 2 cách
+    * C1: Thêm thuộc tính `overflow: hidden` cho thằng cha. Overflow = hidden này nó sẽ ẩn hết các thằng con nằm ngoài thằng cha.
+    * C2: thêm thẻ div.clear sau item cuối và css cho nó là `clear: both`
+* Một element đang là inline nếu thêm property `float` vào thì nó sẽ thành block
+
+### **Responsive**
+* PC: >=1024px
+* Tablet: >=740px & <1024px
+* Mobile: < 740px
+* **@media(max-width: 800px or min-width: 800px) {}**: Độ rộng tối đa là 800px thì CSS trong đó sẽ có hiệu lực
+
